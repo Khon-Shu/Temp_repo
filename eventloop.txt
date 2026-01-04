@@ -1,0 +1,14 @@
+The event loop is a system that lets JavaScript run asynchronous code by checking when the main thread is free and then executing queued tasks.
+JavaScript runs normal (sync) code first
+
+Async tasks (timers, promises, I/O) are queued
+
+The event loop:
+
+waits for the call stack to be empty
+
+runs promise callbacks first
+
+then runs timer/other callbacks
+
+Repeats forever 🔁
