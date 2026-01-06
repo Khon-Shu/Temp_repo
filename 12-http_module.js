@@ -1,6 +1,6 @@
 const http = require ('http')
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => { // server has also  {on} function like server.on('request', (req, res)) where we can listen to the event
         
     if(req.url === '/'){
         res.end("This is Homepage")
